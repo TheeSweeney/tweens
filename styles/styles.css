@@ -41,6 +41,7 @@ html {
 #kerebel {
 	margin-right: -1650; 
 	border-radius: 5px;
+	max-height: 589px;
 }
 
 #hello {
@@ -59,11 +60,12 @@ html {
 
 .textBox {
 	padding-top: 40px;
-		max-width: 466px
-
+	max-width: 726px
 }
 
-
+p {
+	font-size: 25px;
+}
 
 
 
