@@ -1,0 +1,63 @@
+html { 
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #6B717B;
+  background: url("./mistyMountains.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+	
+}
+
+.mainBox {
+	position: absolute;
+	margin: 100px 35px 75px 25px;
+	background-color: #f4f4f4;
+	padding: 20px 0px 0px 100px;
+	-moz-box-shadow: 4px 4px 15px #A2A4A8;
+	-webkit-box-shadow: 4px 4px 15px #A2A4A8;
+	box-shadow: 0px 0px 15px #A2A4A8;
+	border-radius: 5px;
+	min-width: 87%;
+}
+
+
+#kerebel {
+	position: relative;
+	border-radius: 5px;
+	max-width: 30%;
+	left: 100px;
+}
+
+#hello {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#world{
+	font-size: 50px;
+}
+
+.link {
+	color: #6B717B;
+	text-decoration: none;
+}
+
+.textBox {
+	max-width: 466px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
