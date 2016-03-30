@@ -7,13 +7,12 @@
 	<title> Icreon Challenge </title>
 
 	<script src="./node_modules/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 	<script src="./app.js"></script>
 
 </head>
 <body class="container">
-	<div class="mainBox">
+	<div id="mainBox">
 		<div id="topBar">
 			<div></div>
 			<div id="lang">
@@ -27,11 +26,13 @@
 				<div class="textBox">
 					<div id="hello">Hello</div> 
 					<div id="world">WORLD.</div>
-					<p>I'm Christophe Kerebel, the guy who created the photo and video gallery you like to visit and share my love for lights. I dedicated a full year to chase the marvelous lights of America, armed with nothing more than my beloved Canon camera.</p>
-
-					<p>Sorry, I stopped selling those pictures and devote myself today to my new job as a UX/UI designer. If you want to check out my portfolio, it's at <strong><a href="http://www.christophekerebel.com" class="link">christophekerebel.com</a></strong></p>
-
-					<p>Still, catching the light is my passion. You are welcome to visit my new gallery at <strong><a href="http://www.kreapx.com" class="link">kreapx.com</a></strong> 
+					<p id="bodyText">I'm Christophe Kerebel, the guy who created the photo and video gallery you like to visit and share my love for lights. I dedicated a full year to chase the marvelous lights of America, armed with nothing more than my beloved Canon camera.
+					<br>
+					<br>
+					Sorry, I stopped selling those pictures and devote myself today to my new job as a UX/UI designer. If you want to check out my portfolio, it's at <strong><a href="http://www.christophekerebel.com" class="link">christophekerebel.com</a></strong>
+					<br>
+					<br>	
+					Still, catching the light is my passion. You are welcome to visit my new gallery at <strong><a href="http://www.kreapx.com" class="link">kreapx.com</a></strong> 
 					</p>
 					<div id="logoBox">
 						<img class="logo" id="dribble" src="./styles/images/dribble.png" />
@@ -43,7 +44,10 @@
 					</div>
 				</div>
 					<div id="contact">
-						Contact me on <a id="email">kere.chris@gmail.com</a>
+						<p>
+						Contact me on
+							<a id="email"> kere.chris@gmail.com</a>
+						</p>
 					</div>
 			</div>
 			<img id="kerebel" src="./styles//images/kerebel.png" />

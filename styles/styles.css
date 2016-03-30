@@ -7,6 +7,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  font-size: 25px;
 }
 
 .container {
@@ -17,7 +18,7 @@ html {
 	flex: 1;
 }
 
-.mainBox {
+#mainBox {
 	display: flex;
 	flex-direction: column;
 	background-color: #f4f4f4;
@@ -28,8 +29,9 @@ html {
 	box-shadow: 0px 0px 15px #A2A4A8;
 	border-radius: 5px;
 	height:800px;
-	width: ;
 }
+
+
 
 #topBar {
 	padding: 15px 15px 15px 15px;
@@ -53,7 +55,6 @@ html {
 
 
 #kerebel {
-	height: 150px;
 	border-radius: 5px;
 }
 
@@ -72,12 +73,13 @@ html {
 }
 
 .textBox {
-	padding-top: 40px;
-	max-width: 900px
+	padding-top: 20px;
+	max-width: 750px;
 }
 
-p {
-	font-size: 25px;
+#bodyText {
+	min-height: 368px;
+	min-width: 680px;
 }
 
 #logobox{
@@ -90,15 +92,12 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	font-size: 25px;
 	margin-right: -150px;
-	padding-top: 15px;
 }
 
 .logo {
 	max-height: 50px;
 }
-
 
 
 
