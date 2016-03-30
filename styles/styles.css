@@ -1,7 +1,7 @@
 html { 
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #6B717B;
-  background: url("./mistyMountains.jpg") no-repeat center center fixed; 
+  background: url("./images/mistyMountains.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,6 +11,7 @@ html {
 
 .container {
 	display: flex;
+	flex:1;
 	flex-direction: column;
 	justify-content: center;
 	flex: 1;
@@ -18,37 +19,50 @@ html {
 
 .mainBox {
 	display: flex;
-	flex: 12;
-	flex-direction: row;
+	flex-direction: column;
 	background-color: #f4f4f4;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 40px;
+	margin-right: 40px;
 	-moz-box-shadow: 4px 4px 15px #A2A4A8;
 	-webkit-box-shadow: 4px 4px 15px #A2A4A8;
 	box-shadow: 0px 0px 15px #A2A4A8;
 	border-radius: 5px;
-	max-height: 575px
+	height:800px;
+	width: ;
+}
+
+#topBar {
+	padding: 15px 15px 15px 15px;
+	display:flex;
+	flex: 1;
+	justify-content: space-between;
+}
+
+#X {
+	max-width: 30px;
+	max-height: 30px;
 }
 
 #txtImgLogoBox {
 	display: flex;
-	flex:1;
+	flex: 10;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 20px 0px 0px 100px;
+	padding: 20px 0px 0px 150px;
 }
 
 
 #kerebel {
 	height: 150px;
 	border-radius: 5px;
-	max-height: 589px;
 }
 
 #hello {
 	font-size: 50px;
 	font-weight: bold;
 }
+
+selector { cursor: none; }
 
 #world{
 	font-size: 50px;
@@ -61,11 +75,21 @@ html {
 
 .textBox {
 	padding-top: 40px;
-	max-width: 726px
+	max-width: 900px
 }
 
 p {
 	font-size: 25px;
+}
+
+#logobox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	max-height: 50px;
 }
 
 
