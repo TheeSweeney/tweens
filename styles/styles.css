@@ -9,27 +9,38 @@ html {
 }
 
 .container {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.topSpace {
+	flex: 3;
 }
 
 .mainBox {
-	position: absolute;
-	margin: 100px 35px 75px 25px;
+	display: flex;
+	flex: 12;
+	flex-direction: row;
 	background-color: #f4f4f4;
+	margin-left: 25px;
+	margin-right: 25px;
 	padding: 20px 0px 0px 100px;
 	-moz-box-shadow: 4px 4px 15px #A2A4A8;
 	-webkit-box-shadow: 4px 4px 15px #A2A4A8;
 	box-shadow: 0px 0px 15px #A2A4A8;
 	border-radius: 5px;
-	min-width: 87%;
+	justify-content: space-between;
 }
 
+.bottomSpace {
+	flex: 2;
+}
 
 #kerebel {
-	position: relative;
+	margin-right: -1650; 
 	border-radius: 5px;
-	max-width: 30%;
-	left: 100px;
 }
 
 #hello {
@@ -47,8 +58,9 @@ html {
 }
 
 .textBox {
-	max-width: 466px;
-	display: inline-block;
+	padding-top: 40px;
+		max-width: 466px
+
 }
 
 
