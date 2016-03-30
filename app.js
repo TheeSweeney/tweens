@@ -1,5 +1,6 @@
 $(document).ready(function(){
-			var logo = document.getElementById("kerebel");
-	    console.log(logo);
-	    TweenLite.to(logo, 1, {"margin-right":"0px"});
+			var picture = document.getElementById("kerebel");
+			var boxHeight = window.getComputedStyle(document.getElementById("txtImgLogoBox")).getPropertyValue('height')
+	    console.log(boxHeight);
+	    TweenLite.to(picture, 1, {"height": boxHeight});
   	})
