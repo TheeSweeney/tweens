@@ -35,23 +35,30 @@ html {
 
 
 #topBar {
-	padding: 15px 15px 15px 15px;
+	padding: 25px 15px 15px 15px;
 	display:flex;
 	flex: 1;
 	justify-content: space-between;
+	align-items: center;
 }
 
-#X {
-	max-width: 30px;
-	max-height: 30px;
+.icon {
+	height:45px;
 }
+
+#arrow {
+	color: white;
+	width: 55px;
+	padding-left: 15px;
+}
+
 
 #txtImgLogoBox {
 	display: flex;
 	flex: 10;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 20px 0px 0px 150px;
+	padding: 0px 0px 0px 150px;
 }
 
 #largeGraphic{

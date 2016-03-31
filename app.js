@@ -1,20 +1,40 @@
 
 $(document).ready(function(){
 //initial pageload
-	var picture = document.getElementById('kerebel');
+	var mainBox = document.getElementById('mainBox');
+	var image = document.getElementById('image');
+	var bodyText = document.getElementById('bodyText');
 	//var boxHeight = window.getComputedStyle(document.getElementById('txtImgLogoBox')).getPropertyValue('height')
-  //console.log(boxHeight);
-  TweenLite.from(picture, 2, {'opacity': 0});
+  TweenLite.from(image, 2, {'opacity': 0});
 
 
 
+//any logo
+	$('.logo').click(function(){
+		TweenLite.to(bodyText, 3, {
+			color: 'white'
+		})
 
+		TweenLite.to(image, 2, {
+			opacity: 1,
+			onComplete: setTimeout(function() {
+				$('.logo').each(function(){
+					if(!$(this)[0].src.includes('White')){
+						var newSrc = $(this)[0].src.substring(0, $(this)[0].src.length-4) + "White.png";
+						$(this).attr('src', newSrc)
+					}
+				})
+					
+
+					$('#largeGraphic')
+						.css('justify-content', 'center')
+			}, 1000)
+		})
+	})
 //dribble
 	$('#dribble').click(function(){
 
-		var mainBox = document.getElementById('mainBox');
-		var kerebel = document.getElementById('kerebel');
-		var bodyText = document.getElementById('bodyText');
+		
 		
 		$('#bodyText').fadeOut(1000,function() {
 	  	$(this).text('Pork prosciutto ball tip kielbasa, capicola cow flank beef turkey tail. Short loin turkey capicola t-bone, chicken alcatra picanha cupim kielbasa spare ribs shankle cow swine. Tri-tip shoulder kevin leberkas. Ham frankfurter swine salami t-bone pork ground round short ribs hamburger boudin chicken shank.').fadeIn(2000);
@@ -23,14 +43,14 @@ $(document).ready(function(){
 
 		
 
-		TweenLite.to(kerebel, 1, {
+		TweenLite.to(image, 1, {
 			opacity: 0,
 		})
 
-		TweenLite.to(kerebel, 2, {
+		TweenLite.to(image, 2, {
 			opacity: 1,
 			onComplete: setTimeout(function() {
-				$('#kerebel')
+				$('#image')
 					.attr('src', './styles/images/metrics.gif')
 					.css({
 						'height': '315px', 
@@ -38,10 +58,12 @@ $(document).ready(function(){
 						'padding-left': '100px',
 						'padding-top': '50px'
 					})
-					$('#largeGraphic')
-						.css('justify-content', 'center')
 			}, 1000)
-		}).delay(1)
+		}).delay(1.5)
+
+		TweenLite.to(mainBox, 3, {
+			backgroundColor: '#e54c85'
+		})
 	});
 
 
