@@ -20,7 +20,7 @@ $(document).ready(function(){
 		});
 
 
-		var manToMetric = $("#kerebel").attr("src", "./styles/images/metrics.gif");
+		
 
 		TweenLite.to(kerebel, 2, {
 			"opacity": 0,
@@ -28,7 +28,9 @@ $(document).ready(function(){
 
 		TweenLite.to(kerebel, 2, {
 			"opacity": 1,
-			onComplete: manToMetric,
+			onComplete: setTimeout(function() {
+				$("#kerebel").attr("src", "./styles/images/metrics.gif")
+			}, 2000)
 		}).delay(2)
 	});
 
