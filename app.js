@@ -4,6 +4,7 @@ $(document).ready(function(){
 	var mainBox = document.getElementById('mainBox');
 	var image = document.getElementById('image');
 	var bodyText = document.getElementById('bodyText');
+	var text = document.getElementsByClassName('text');
 	//var boxHeight = window.getComputedStyle(document.getElementById('txtImgLogoBox')).getPropertyValue('height')
   TweenLite.from(image, 2, {'opacity': 0});
 
@@ -11,9 +12,16 @@ $(document).ready(function(){
 
 //any logo
 	$('.logo').click(function(){
+		
+		console.log(text);
 		TweenLite.to(bodyText, 3, {
 			color: 'white'
 		})
+
+		TweenLite.to(text, 3, {
+			color: 'white'
+		})
+
 
 		TweenLite.to(image, 2, {
 			opacity: 1,
@@ -26,9 +34,9 @@ $(document).ready(function(){
 				})
 					
 
-					$('#largeGraphic')
-						.css('justify-content', 'center')
-			}, 1000)
+				$('#largeGraphic')
+					.css('justify-content', 'center')
+			}, 0)
 		})
 	})
 //dribble
