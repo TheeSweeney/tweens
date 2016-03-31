@@ -100,7 +100,7 @@ $(document).ready(function(){
 				opacity: 1,
 				onComplete: setTimeout(function() {
 					$('#image')
-						.attr('src', './styles/images/metrics.gif')
+						.attr('src', './styles/images/W.gif')
 						.css({
 							'height': '315px', 
 							'width': '402px', 
@@ -111,7 +111,7 @@ $(document).ready(function(){
 			}).delay(1.5)
 
 			TweenLite.to(mainBox, 3, {
-				backgroundColor: '#e54c85'
+				backgroundColor: '#1970F8'
 			})
 		}
 	});
