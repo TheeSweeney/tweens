@@ -14,16 +14,16 @@ $(document).ready(function(){
 //any logo
 	$('.logo').click(function(){
 		
-		TweenLite.to(bodyText, 3, {
+		TweenLite.to(bodyText, 2, {
 			color: 'white'
 		})
 
-		TweenLite.to(text, 3, {
+		TweenLite.to(text, 2, {
 			color: 'white'
 		})
 
 
-		TweenLite.to(image, 2, {
+		TweenLite.to(image, 1, {
 			opacity: 1,
 			onComplete: setTimeout(function() {
 				$('.logo').each(function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
 						'justify-content': 'center',
 						'align-items': 'center'
 					})
-			}, 1000)
+			}, 500)
 		})
 	})
 //dribble
@@ -49,18 +49,18 @@ $(document).ready(function(){
 
 		
 		
-			$('#bodyText').fadeOut(1000,function() {
-		  	$(this).text('Pork prosciutto ball tip kielbasa, capicola cow flank beef turkey tail. Short loin turkey capicola t-bone, chicken alcatra picanha cupim kielbasa spare ribs shankle cow swine. Tri-tip shoulder kevin leberkas. Ham frankfurter swine salami t-bone pork ground round short ribs hamburger boudin chicken shank.').fadeIn(2000);
+			$('#bodyText').fadeOut(500,function() {
+		  	$(this).text('Pork prosciutto ball tip kielbasa, capicola cow flank beef turkey tail. Short loin turkey capicola t-bone, chicken alcatra picanha cupim kielbasa spare ribs shankle cow swine. Tri-tip shoulder kevin leberkas. Ham frankfurter swine salami t-bone pork ground round short ribs hamburger boudin chicken shank.').fadeIn(1000);
 			});
 
 
 			
 
-			TweenLite.to(image, 1, {
+			TweenLite.to(image, .5, {
 				opacity: 0,
 			})
 
-			TweenLite.to(image, 2, {
+			TweenLite.to(image, 1, {
 				opacity: 1,
 				onComplete: setTimeout(function() {
 					$('#image')
@@ -71,10 +71,10 @@ $(document).ready(function(){
 							'padding-bottom': '70px'
 						})
 					$('#largeGraphic')
-				}, 1000)
-			}).delay(1.5)
+				}, 500)
+			}).delay(.75)
 
-			TweenLite.to(mainBox, 3, {
+			TweenLite.to(mainBox, 1.5, {
 				backgroundColor: '#e54c85'
 			})
 		}
@@ -87,38 +87,73 @@ $(document).ready(function(){
 
 		
 		
-			$('#bodyText').fadeOut(1000,function() {
-		  	$(this).text('Kevin bacon strip steak tongue, t-bone picanha ham hock doner sausage ball tip beef ribs fatback shoulder. Pork leberkas ball tip tri-tip swine filet mignon kielbasa venison. Leberkas cupim biltong, boudin landjaeger spare ribs kevin frankfurter pig ham pork chop. Pig chicken short loin jerky frankfurter pork chop cupim pork loin rump jowl. Meatloaf alcatra flank short loin boudin t-bone capicola swine tongue andouille pork belly.').fadeIn(2000);
+			$('#bodyText').fadeOut(500,function() {
+		  	$(this).text('Kevin bacon strip steak tongue, t-bone picanha ham hock doner sausage ball tip beef ribs fatback shoulder. Pork leberkas ball tip tri-tip swine filet mignon kielbasa venison. Leberkas cupim biltong, boudin landjaeger spare ribs kevin frankfurter pig ham pork chop. Pig chicken short loin jerky frankfurter pork chop cupim pork loin rump jowl. Meatloaf alcatra flank short loin boudin t-bone capicola swine tongue andouille pork belly.').fadeIn(1000);
 			});
 
 
 			
 
-			TweenLite.to(image, 1, {
+			TweenLite.to(image, .5, {
 				opacity: 0,
 			})
 
-			TweenLite.to(image, 2, {
+			TweenLite.to(image, 1, {
 				opacity: 1,
 				onComplete: setTimeout(function() {
 					$('#image')
-						.attr('src', './styles/images/W.gif')
+						.attr('src', './styles/images/metrics.gif')
 						.css({
-							'height': '315px', 
-							'width': '402px', 
-							'padding-bottom': '50px'
+							'height': '365px', 
+							'width': '502px',
+							'padding-bottom': '70px'
 						})
-				}, 1000)
-			}).delay(1.5)
+				}, 500)
+			}).delay(.75)
 
-			TweenLite.to(mainBox, 3, {
+			TweenLite.to(mainBox, 1.5	, {
 				backgroundColor: '#1970F8'
 			})
 		}
 	});
 
 
+//Instagram
+	$('#instagram').click(function(){
+		if(state !== 3){
+			state = 3;
 
+		
+		
+			$('#bodyText').fadeOut(500,function() {
+		  	$(this).text('Brisket turkey pancetta jerky, biltong meatloaf chicken capicola fatback sirloin drumstick tail cow strip steak frankfurter. Ground round ball tip turducken, rump t-bone salami landjaeger sirloin turkey. Cow pork loin picanha leberkas turkey sirloin filet mignon chicken shank turducken short ribs sausage. Pancetta porchetta venison tri-tip jowl t-bone flank doner short ribs brisket strip steak cupim swine sausage pork chop.').fadeIn(1000);
+			});
+
+
+			
+
+			TweenLite.to(image, .5, {
+				opacity: 0,
+			})
+
+			TweenLite.to(image, 1, {
+				opacity: 1,
+				onComplete: setTimeout(function() {
+					$('#image')
+						.attr('src', './styles/images/slideshow.gif')
+						.css({
+							'height': '365px', 
+							'width': '552px',
+							'padding-bottom': '70px'
+						})
+				}, 500)
+			}).delay(.75)
+
+			TweenLite.to(mainBox, 1.5	, {
+				backgroundColor: '#2B5A84'
+			})
+		}
+	});
 
 
 
