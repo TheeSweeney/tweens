@@ -38,6 +38,8 @@ $(document).ready(function(){
 						'padding-left': '100px',
 						'padding-top': '50px'
 					})
+					$('#largeGraphic')
+						.css('justify-content', 'center')
 			}, 1000)
 		}).delay(1)
 	});
