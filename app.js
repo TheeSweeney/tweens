@@ -102,7 +102,7 @@ $(document).ready(function(){
 				opacity: 1,
 				onComplete: setTimeout(function() {
 					$('#image')
-						.attr('src', './styles/images/metrics.gif')
+						.attr('src', './styles/images/phone.gif')
 						.css({
 							'height': '365px', 
 							'width': '502px',
@@ -144,7 +144,8 @@ $(document).ready(function(){
 						.css({
 							'height': '365px', 
 							'width': '552px',
-							'padding-bottom': '70px'
+							'padding-bottom': '70px',
+							'padding-right': '5px'
 						})
 				}, 500)
 			}).delay(.75)
