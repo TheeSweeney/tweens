@@ -78,9 +78,14 @@ html {
 	text-decoration: none;
 }
 
-.textBox {
+#textLogoBox {
+	width: 787px
+}
+
+#textBox {
 	padding-top: 20px;
 	max-width: 750px;
+	flex: 1;
 }
 
 #bodyText {
