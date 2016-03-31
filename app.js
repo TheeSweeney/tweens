@@ -14,7 +14,6 @@ $(document).ready(function(){
 //any logo
 	$('.logo').click(function(){
 		
-		console.log(text);
 		TweenLite.to(bodyText, 3, {
 			color: 'white'
 		})
@@ -36,8 +35,11 @@ $(document).ready(function(){
 					
 
 				$('#largeGraphic')
-					.css('justify-content', 'center')
-			}, 0)
+					.css({
+						'justify-content': 'center',
+						'align-items': 'center'
+					})
+			}, 1000)
 		})
 	})
 //dribble
@@ -64,9 +66,9 @@ $(document).ready(function(){
 					$('#image')
 						.attr('src', './styles/images/metrics.gif')
 						.css({
-							'height': '315px', 
-							'width': '402px',
-							'padding-top': '50px'
+							'height': '365px', 
+							'width': '502px',
+							'padding-bottom': '70px'
 						})
 					$('#largeGraphic')
 				}, 1000)
@@ -104,8 +106,7 @@ $(document).ready(function(){
 						.css({
 							'height': '315px', 
 							'width': '402px', 
-							'padding-left': '100px',
-							'padding-top': '50px'
+							'padding-bottom': '50px'
 						})
 				}, 1000)
 			}).delay(1.5)
