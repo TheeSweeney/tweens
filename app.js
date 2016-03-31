@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var image = document.getElementById('image');
 	var bodyText = document.getElementById('bodyText');
 	var text = document.getElementsByClassName('text');
+	var state = 0;
 	//var boxHeight = window.getComputedStyle(document.getElementById('txtImgLogoBox')).getPropertyValue('height')
   TweenLite.from(image, 2, {'opacity': 0});
 
@@ -41,39 +42,79 @@ $(document).ready(function(){
 	})
 //dribble
 	$('#dribble').click(function(){
+		if(state !== 1){
+			state = 1;
 
 		
 		
-		$('#bodyText').fadeOut(1000,function() {
-	  	$(this).text('Pork prosciutto ball tip kielbasa, capicola cow flank beef turkey tail. Short loin turkey capicola t-bone, chicken alcatra picanha cupim kielbasa spare ribs shankle cow swine. Tri-tip shoulder kevin leberkas. Ham frankfurter swine salami t-bone pork ground round short ribs hamburger boudin chicken shank.').fadeIn(2000);
-		});
+			$('#bodyText').fadeOut(1000,function() {
+		  	$(this).text('Pork prosciutto ball tip kielbasa, capicola cow flank beef turkey tail. Short loin turkey capicola t-bone, chicken alcatra picanha cupim kielbasa spare ribs shankle cow swine. Tri-tip shoulder kevin leberkas. Ham frankfurter swine salami t-bone pork ground round short ribs hamburger boudin chicken shank.').fadeIn(2000);
+			});
 
 
-		
+			
 
-		TweenLite.to(image, 1, {
-			opacity: 0,
-		})
+			TweenLite.to(image, 1, {
+				opacity: 0,
+			})
 
-		TweenLite.to(image, 2, {
-			opacity: 1,
-			onComplete: setTimeout(function() {
-				$('#image')
-					.attr('src', './styles/images/metrics.gif')
-					.css({
-						'height': '315px', 
-						'width': '402px', 
-						'padding-left': '100px',
-						'padding-top': '50px'
-					})
-			}, 1000)
-		}).delay(1.5)
+			TweenLite.to(image, 2, {
+				opacity: 1,
+				onComplete: setTimeout(function() {
+					$('#image')
+						.attr('src', './styles/images/metrics.gif')
+						.css({
+							'height': '315px', 
+							'width': '402px',
+							'padding-top': '50px'
+						})
+					$('#largeGraphic')
+				}, 1000)
+			}).delay(1.5)
 
-		TweenLite.to(mainBox, 3, {
-			backgroundColor: '#e54c85'
-		})
+			TweenLite.to(mainBox, 3, {
+				backgroundColor: '#e54c85'
+			})
+		}
 	});
 
+//Bēhance
+	$('#Be').click(function(){
+		if(state !== 2){
+			state = 2;
+
+		
+		
+			$('#bodyText').fadeOut(1000,function() {
+		  	$(this).text('Kevin bacon strip steak tongue, t-bone picanha ham hock doner sausage ball tip beef ribs fatback shoulder. Pork leberkas ball tip tri-tip swine filet mignon kielbasa venison. Leberkas cupim biltong, boudin landjaeger spare ribs kevin frankfurter pig ham pork chop. Pig chicken short loin jerky frankfurter pork chop cupim pork loin rump jowl. Meatloaf alcatra flank short loin boudin t-bone capicola swine tongue andouille pork belly.').fadeIn(2000);
+			});
+
+
+			
+
+			TweenLite.to(image, 1, {
+				opacity: 0,
+			})
+
+			TweenLite.to(image, 2, {
+				opacity: 1,
+				onComplete: setTimeout(function() {
+					$('#image')
+						.attr('src', './styles/images/metrics.gif')
+						.css({
+							'height': '315px', 
+							'width': '402px', 
+							'padding-left': '100px',
+							'padding-top': '50px'
+						})
+				}, 1000)
+			}).delay(1.5)
+
+			TweenLite.to(mainBox, 3, {
+				backgroundColor: '#e54c85'
+			})
+		}
+	});
 
 
 
