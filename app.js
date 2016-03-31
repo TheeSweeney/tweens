@@ -156,6 +156,44 @@ $(document).ready(function(){
 		}
 	});
 
+//Vimeo
+	$('#vimeo').click(function(){
+		if(state !== 4){
+			state = 4;
+
+		
+		
+			$('#bodyText').fadeOut(500,function() {
+		  	$(this).text('Bacon ipsum dolor amet strip steak corned beef bacon tenderloin ball tip prosciutto tri-tip drumstick. Landjaeger pig corned beef short ribs. Ham pork loin brisket sirloin beef ribs chicken. Ball tip tenderloin brisket sirloin andouille, prosciutto beef bacon doner chicken short ribs ham hock. Brisket kevin cupim beef porchetta. ').fadeIn(1000);
+			});
+
+
+			
+
+			TweenLite.to(image, .5, {
+				opacity: 0,
+			})
+
+			TweenLite.to(image, 1, {
+				opacity: 1,
+				onComplete: setTimeout(function() {
+					$('#image')
+						.attr('src', './styles/images/slideshow.gif')
+						.css({
+							'height': '365px', 
+							'width': '552px',
+							'padding-bottom': '70px',
+							'padding-right': '5px'
+						})
+				}, 500)
+			}).delay(.75)
+
+			TweenLite.to(mainBox, 1.5	, {
+				backgroundColor: '#1BB1E4'
+			})
+		}
+	});
+
 
 
 
