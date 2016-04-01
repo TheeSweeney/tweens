@@ -252,6 +252,18 @@ use that to figure out something that may work
 							'padding-right': '',
 							'border-radius': ''
 						})
+
+						$('.logo').each(function(){
+						var newSrc = $(this)[0].src.substring(0, $(this)[0].src.length-9) + ".png";
+						$(this).attr('src', newSrc)
+				})
+					
+
+				$('#largeGraphic')
+					.css({
+						'justify-content': '',
+						'align-items': ''
+					})
 				}, 500)
 			}).delay(.75)
 
@@ -265,24 +277,6 @@ use that to figure out something that may work
 
 		TweenLite.to(text, 2, {
 			color: '#6B717B'
-		})
-
-
-		TweenLite.to(image, 1, {
-			opacity: 1,
-			onComplete: setTimeout(function() {
-				$('.logo').each(function(){
-						var newSrc = $(this)[0].src.substring(0, $(this)[0].src.length-9) + ".png";
-						$(this).attr('src', newSrc)
-				})
-					
-
-				$('#largeGraphic')
-					.css({
-						'justify-content': '',
-						'align-items': ''
-					})
-			}, 500)
 		})
 	});
 
