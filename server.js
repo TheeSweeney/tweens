@@ -22,6 +22,14 @@ app.get('/loginRed', function(req, res) {
 	res.sendfile(__dirname + "/static/loginRed.html")
 })
 
+app.get('/loginPurple', function(req, res) {
+	res.sendfile(__dirname + "/static/loginPurple.html")
+})
+
+app.get('/home', function(req, res) {
+	res.sendfile(__dirname + "/static/home.html")
+})
+
 
 console.log('Icreon is listening on port ' + port);
 app.listen(port);

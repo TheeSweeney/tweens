@@ -19,6 +19,12 @@ html {
 	flex: 1;
 }
 
+.navDot {
+	max-height: 20px;
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+
 #mainBox {
 	display: flex;
 	flex-direction: column;
@@ -125,11 +131,7 @@ html {
 	justify-content: center;
 }
 
-.navDot {
-	max-height: 20px;
-	margin-left: 10px;
-	margin-bottom: 5px
-}
+
 
 #loginRed {
 	color:white;
