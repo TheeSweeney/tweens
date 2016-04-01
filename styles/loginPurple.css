@@ -29,4 +29,19 @@ html {
 	border-radius: 5px;
 	height: 514px;
 	width: 292px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#signIn {
+	height: 39px;
+	width: 96px;
+}
+
+#mountains {
+	width: 118px;
+	height: 127px;
+}
+
+#bottomBar {
 }
