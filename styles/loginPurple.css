@@ -42,6 +42,10 @@ html {
 	color: #5E2E91;
 }
 
+#signin:focus {
+    outline: none;
+}
+
 #mountains {
 	width: 118px;
 	height: 127px;

@@ -1,6 +1,3 @@
-html {
-		background-color: red;
-}
 
 .container {
 	display: flex;
@@ -20,7 +17,7 @@ html {
 #mainBox {
 	display: flex;
 	flex-direction: column;
-	background-color: #5E2E91;
+	background-color: red;
 	margin-left: 40px;
 	margin-right: 40px;
 	-moz-box-shadow: 4px 4px 15px #A2A4A8;
