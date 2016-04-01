@@ -9,6 +9,15 @@ $(document).ready(function(){
 	//var boxHeight = window.getComputedStyle(document.getElementById('txtImgLogoBox')).getPropertyValue('height')
   TweenLite.from(image, 2, {'opacity': 0});
 
+  /*
+$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$
+To handle the images snapping in, have them be off screen and hen tween in from right to leff 
+while simultaneously applying a separate tween the change the opacitty - remember that page with all the graphs on the different speeds of tweens
+use that to figure out something that may work
+  */
+
 
 
 //any logo
@@ -267,8 +276,8 @@ $(document).ready(function(){
 
 				$('#largeGraphic')
 					.css({
-						'justify-content': 'center',
-						'align-items': 'center'
+						'justify-content': '',
+						'align-items': ''
 					})
 			}, 500)
 		})

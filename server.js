@@ -12,6 +12,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
+app.get('/', function(req, res) {
+	res.sendFile(__dirname + "/static/index.html")
+})
+
+app.get('/test', function(req, res) {
+	res.sendfile(__dirname + "/static/loginRed.html")
+})
+
 
 console.log('Icreon is listening on port ' + port);
 app.listen(port);

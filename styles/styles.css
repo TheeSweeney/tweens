@@ -13,6 +13,7 @@ html {
 .container {
 	display: flex;
 	flex:1;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex: 1;
@@ -117,6 +118,22 @@ html {
 
 .logo {
 	max-height: 50px;
+}
+
+#dotBox {
+	display:flex;
+	justify-content: center;
+}
+
+.navDot {
+	max-height: 20px;
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+
+#loginRed {
+	color:white;
+	font-size: 35px:;
 }
 
 
