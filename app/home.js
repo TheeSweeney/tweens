@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
+//if there is time, this file can be broken down into a more 
+//modular structure for readability and SoC
 //initial pageload
 	var mainBox = document.getElementById('mainBox');
 	var image = document.getElementById('image');
@@ -17,6 +19,7 @@ To handle the images snapping in, have them be off screen and hen tween in from 
 while simultaneously applying a separate tween the change the opacitty - remember that page with all the graphs on the different speeds of tweens
 use that to figure out something that may work
   */
+
 
 
 

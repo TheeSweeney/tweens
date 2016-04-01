@@ -12,11 +12,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
+
+//if there is time, separate routes into a different routing file
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + "/static/index.html")
 })
 
-app.get('/test', function(req, res) {
+app.get('/loginRed', function(req, res) {
 	res.sendfile(__dirname + "/static/loginRed.html")
 })
 
