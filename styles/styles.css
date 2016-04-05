@@ -37,6 +37,7 @@ html {
 	border-radius: 5px;
 	height: 600px;
 	width: 1125px;
+	overflow: hidden;
 }
 
 

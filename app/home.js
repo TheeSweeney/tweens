@@ -7,18 +7,12 @@ $(document).ready(function(){
 	var image = document.getElementById('image');
 	var bodyText = document.getElementById('bodyText');
 	var text = document.getElementsByClassName('text');
+	var contact = document.getElementById('contact');
 	var state = 0;
 	//var boxHeight = window.getComputedStyle(document.getElementById('txtImgLogoBox')).getPropertyValue('height')
   TweenLite.from(image, 2, {'opacity': 0});
 
-  /*
-$$$$$$$$$$$$$$$$$$$
-$$$$$$$$$$$$$$$$$$$
-$$$$$$$$$$$$$$$$$$$
-To handle the images snapping in, have them be off screen and hen tween in from right to leff 
-while simultaneously applying a separate tween the change the opacitty - remember that page with all the graphs on the different speeds of tweens
-use that to figure out something that may work
-  */
+
 
 
 
@@ -32,6 +26,10 @@ use that to figure out something that may work
 
 		TweenLite.to(text, 2, {
 			color: 'white'
+		})
+
+		TweenLite.to(contact, 2, {
+			"margin-right": -400
 		})
 
 
@@ -74,6 +72,11 @@ use that to figure out something that may work
 
 			TweenLite.to(image, .5, {
 				opacity: 0,
+				onComplete: function() {
+					TweenLite.from(image, 1, {
+						'margin-right': -500
+					})
+				}
 			})
 
 			TweenLite.to(image, 1, {
@@ -82,10 +85,10 @@ use that to figure out something that may work
 					$('#image')
 						.attr('src', './styles/images/metrics.gif')
 						.css({
-							'height': '365px', 
+							'height': '265px', 
 							'width': '502px',
 							'padding-bottom': '70px',
-							'border-radius': '15px 15px 15px 15px'
+							'padding-right': '10px'
 						})
 					$('#largeGraphic')
 				}, 500)
@@ -117,6 +120,11 @@ use that to figure out something that may work
 
 			TweenLite.to(image, .5, {
 				opacity: 0,
+				onComplete: function() {
+					TweenLite.from(image, 1, {
+						'margin-right': -500
+					})
+				}
 			})
 
 			TweenLite.to(image, 1, {
@@ -157,6 +165,11 @@ use that to figure out something that may work
 
 			TweenLite.to(image, .5, {
 				opacity: 0,
+				onComplete: function() {
+					TweenLite.from(image, 1, {
+						'margin-right': -500
+					})
+				}
 			})
 
 			TweenLite.to(image, 1, {
@@ -165,11 +178,10 @@ use that to figure out something that may work
 					$('#image')
 						.attr('src', './styles/images/slideshow.gif')
 						.css({
-							'height': '365px', 
+							'height': '285px', 
 							'width': '552px',
 							'padding-bottom': '70px',
-							'padding-right': '5px',
-							'border-radius': '15px'
+							'padding-right': '10px',
 						})
 				}, 500)
 			}).delay(.75)
@@ -197,19 +209,26 @@ use that to figure out something that may work
 
 			TweenLite.to(image, .5, {
 				opacity: 0,
+				onComplete: function() {
+					TweenLite.from(image, 1, {
+						'margin-right': -500
+					})
+				}
 			})
+
+			
+
 
 			TweenLite.to(image, 1, {
 				opacity: 1,
 				onComplete: setTimeout(function() {
 					$('#image')
-						.attr('src', './styles/images/slideshow.gif')
+						.attr('src', './styles/images/NYcityscape.gif')
 						.css({
-							'height': '365px', 
+							'height': '230px', 
 							'width': '552px',
 							'padding-bottom': '70px',
-							'padding-right': '5px',
-							'border-radius': '15px'
+							'padding-right': '10px',
 						})
 				}, 500)
 			}).delay(.75)
@@ -250,7 +269,6 @@ use that to figure out something that may work
 							'width': '',
 							'padding-bottom': '',
 							'padding-right': '',
-							'border-radius': ''
 						})
 
 						$('.logo').each(function(){
