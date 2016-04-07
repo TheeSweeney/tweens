@@ -67,6 +67,11 @@ $(document).ready(function(){
 		  	$(this).text('DRIBBLE').fadeIn(500);
 			});
 
+			// $('#dribbleClick').css({
+			// 	'animation-duration': '4s',
+   //    	'animation-name': 'swipe',
+   //    	'animation-fill-mode': 'forwards',
+			// })
 
 			
 

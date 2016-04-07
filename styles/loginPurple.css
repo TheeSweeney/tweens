@@ -27,9 +27,17 @@ html {
 	-webkit-box-shadow: 4px 4px 15px #A2A4A8;
 	box-shadow: 0px 0px 15px #A2A4A8;
 	border-radius: 5px;
-	height: 514px;
+	min-height: 514px;
+	max-height: 514px;
 	width: 292px;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
+}
+
+#topGraphics {
+	display: flex;
+	flex-direction: column;
+	justify-contents: center;
 	align-items: center;
 }
 
@@ -42,18 +50,50 @@ html {
 	color: #5E2E91;
 }
 
+#signInBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	width: 97px;
+	margin-top: 150px;
+	margin-bottom: 67px;
+	border-radius: 25px;
+	background-color: #FFFFFF;
+	color: #5E2E91;
+}
+
 #signin:focus {
-    outline: none;
+   outline: none;
 }
 
 #mountains {
-	width: 118px;
-	height: 127px;
+	width: 57px;
+	height: 57px;
+	margin-top: 110px;
 }
 
-#bottomBar {
+#topBars {
+	margin-top: 39px;
 }
 
+#bottomBars {
+	margin-bottom: 16px;
+}
+
+.input {
+	border: 0px;
+	border-bottom: 3px;
+	border-color: gray;
+	padding-bottom: 4px;
+	width: 204px;
+	color: #666699;
+}
+
+.input:focus {
+	outline:none;
+}
 
 
 
