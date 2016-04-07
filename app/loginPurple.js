@@ -4,7 +4,8 @@ $(document).ready(function(){
 	var mountains = document.getElementById('mountains');
 	var topBars = document.getElementById('topBars');
 	var topGraphics = document.getElementById('topGraphics');
-	
+	var holder;
+
 	$('#signIn').click(function(){
 		$('#signIn').fadeOut();
 
@@ -26,13 +27,23 @@ $(document).ready(function(){
 			.to(mountains, .5, {
 				'margin-top': '77px',
 				onComplete: function(){
-					$('#signInBox').html('<input type="text" class="input" id="username" value="username"/><input type="text" class="input" id="email" value="E-mail Address"/><input type="text" class="input" id="password" value="Password"/>')
+					$('#signInBox').html('<input type="text" class="input" id="Username" value="Username"/><input type="text" class="input" id="E-mail" value="E-mail"/><input type="text" class="input" id="Password" value="Password"/>')
 				
 					$('.input').focus(function(){
-
-						this.value = '';
+						if(this.value == this.id){
+							holder = this.value
+							this.value = '';
+						} 
 						console.log(this)
 					})
+					$('.input').focusout(function(){
+
+						if(this.value === ''){
+							this.value = holder;
+						}
+
+					})
+
 				}
 			}, '-=.25')
 	})
