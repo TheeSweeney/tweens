@@ -68,6 +68,19 @@ html {
    outline: none;
 }
 
+#textBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex: 6;
+}
+
+#submit2Box {
+	display: flex;
+	flex:1;
+}
+
 #mountains {
 	width: 57px;
 	height: 57px;
@@ -102,6 +115,18 @@ html {
 	border-color: black;
 }
 
+#submit2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 61px;
+	height:15px;
+	width:15px;
+	border-radius: 15px;
+	background-color: #14FFB5;
+	color: white;
+	font-size: 14px
+}
 
 
 
