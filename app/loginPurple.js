@@ -22,7 +22,9 @@ $(document).ready(function(){
 				width: '267px', 
 				'margin-top': '0px',
 				'margin-bottom': '54px',
-				'border-radius': '5px'
+				'border-radius': '5px',
+				'padding-top': '20px',
+				'padding-bottom': '40px'
 			}, '-=.5')
 			.to(mountains, .5, {
 				'margin-top': '77px',
@@ -34,7 +36,6 @@ $(document).ready(function(){
 							holder = this.value
 							this.value = '';
 						} 
-						console.log(this)
 					})
 					$('.input').focusout(function(){
 
